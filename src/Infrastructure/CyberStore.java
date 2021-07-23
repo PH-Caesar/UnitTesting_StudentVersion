@@ -11,8 +11,8 @@ public class CyberStore {
 
 //------------------------------ GLOBAL VARIABLES ---------------------------------------
 			
-	private ArrayList<ComputerZubehör> stock;
-	private ArrayList<ComputerZubehör> shop;
+	private ArrayList<ComputerZubehoer> stock;
+	private ArrayList<ComputerZubehoer> shop;
 	
 	private double size;
 	private String location;
@@ -21,8 +21,8 @@ public class CyberStore {
 				
 	public CyberStore() {
 		
-		stock = new ArrayList<ComputerZubehör>();
-		shop = new ArrayList<ComputerZubehör>();
+		stock = new ArrayList<ComputerZubehoer>();
+		shop = new ArrayList<ComputerZubehoer>();
 		
 		stock.add(new Mouse("Corsair Pro Max Ultra V.7", new Date(10000000), new Date(1001050), Hersteller.CORSAIR));
 		stock.add(new Mouse("HP Mouse", new Date(10000000), new Date(1001050), Hersteller.HP));
@@ -45,7 +45,7 @@ public class CyberStore {
 	 * Description: 
 	 * Trys to add new ComputerZubehör into the Arraylist stock
 	 */
-	public void addStockComputerZubehör(ComputerZubehör newComputerZubehör) throws Throwable {
+	public void addStockComputerZubehör(ComputerZubehoer newComputerZubehör) throws Throwable {
 		if(!stock.contains(newComputerZubehör)&&!newComputerZubehör.getName().isEmpty()) {
 			stock.add(newComputerZubehör);
 		}else if(stock.contains(newComputerZubehör)){
@@ -58,7 +58,7 @@ public class CyberStore {
 	 * Trys to remove new ComputerZubehör from the Arraylist stock
 	 */
 	
-	public void deleteStockComputerZubehör(ComputerZubehör newComputerZubehör) throws Exception {
+	public void deleteStockComputerZubehör(ComputerZubehoer newComputerZubehör) throws Exception {
 		if(stock.contains(newComputerZubehör)) {
 			stock.remove(newComputerZubehör);
 		}else {
@@ -71,7 +71,7 @@ public class CyberStore {
 	 * Trys to Add a new ComputerZubehör into the Shop
 	 */
 	
-	public void addComputerZubehörToShop(ComputerZubehör newComputerzubehör) {
+	public void addComputerZubehörToShop(ComputerZubehoer newComputerzubehör) {
 		if(shop.contains(newComputerzubehör))
 		{
 			return;
@@ -85,22 +85,22 @@ public class CyberStore {
 //------------------------------ GET / SET METHODS ---------------------------------------
 			
 	
-	public ArrayList<ComputerZubehör> getStock() {
+	public ArrayList<ComputerZubehoer> getStock() {
 		return stock;
 	}
 
 
-	public void setStock(ArrayList<ComputerZubehör> stock) {
+	public void setStock(ArrayList<ComputerZubehoer> stock) {
 		this.stock = stock;
 	}
 
 
-	public ArrayList<ComputerZubehör> getShop() {
+	public ArrayList<ComputerZubehoer> getShop() {
 		return shop;
 	}
 
 
-	public void setShop(ArrayList<ComputerZubehör> shop) {
+	public void setShop(ArrayList<ComputerZubehoer> shop) {
 		this.shop = shop;
 	}
 

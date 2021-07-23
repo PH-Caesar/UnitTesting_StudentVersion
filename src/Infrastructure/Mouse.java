@@ -9,7 +9,7 @@ import java.util.Date;
  * Extended ComputerZubehör Class Mouse
  */
 
-public class Mouse extends ComputerZubehör
+public class Mouse extends ComputerZubehoer
 {
 
 

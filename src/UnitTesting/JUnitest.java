@@ -19,7 +19,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.function.Executable;
 
-import Infrastructure.ComputerZubehör;
+import Infrastructure.ComputerZubehoer;
 import Infrastructure.CyberStore;
 import Infrastructure.Hersteller;
 import Infrastructure.Keyboard;

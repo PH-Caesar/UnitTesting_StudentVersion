@@ -9,7 +9,7 @@ import java.util.Date;
  * Keyboard Class => extended ComputerZubehör
  */
 
-public class Keyboard extends ComputerZubehör
+public class Keyboard extends ComputerZubehoer
 {
 	
 //------------------------------ GLOBAL VARIABLES ---------------------------------------

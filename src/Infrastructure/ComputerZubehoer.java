@@ -7,7 +7,7 @@ import java.util.Date;
  * Description :
  * Abstract class that includes variables for all ComputerZubehör type classes
  */
-public class ComputerZubehör 
+public class ComputerZubehoer 
 {
 	
 
@@ -34,7 +34,7 @@ public class ComputerZubehör
 	 * Initialising fields
 	 */
 	
-	public ComputerZubehör(String name, Date buydate, Date madedate, Hersteller hersteller,String producttype) {
+	public ComputerZubehoer(String name, Date buydate, Date madedate, Hersteller hersteller,String producttype) {
 		super();
 		this.name = name;
 		this.buydate = buydate;
@@ -129,7 +129,7 @@ public class ComputerZubehör
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			ComputerZubehör other = (ComputerZubehör) obj;
+			ComputerZubehoer other = (ComputerZubehoer) obj;
 			if (buydate == null) {
 				if (other.buydate != null)
 					return false;
